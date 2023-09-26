@@ -16,7 +16,7 @@ superStrength.Level = PowerLevel.TwoLevel;
 
 SuperHeroe superman = new SuperHeroe();
 superman.Id = 1;
-superman.Name = "Superman";
+superman.Name = "      Superman    ";
 superman.SecretIdentity = "Clark Kent";
 superman.City = "Ciudad Capital";
 superman.CanFly = true;
@@ -29,7 +29,7 @@ superman.UseSuperpowers();
 
 SuperHeroe hulk = new SuperHeroe();
 hulk.Id = 1;
-hulk.Name = "Hulk";
+hulk.Name = "      Hulk";
 hulk.SecretIdentity = "Mark Ruffalo ";
 hulk.City = "Ciudad Capital";
 hulk.CanFly = false;
