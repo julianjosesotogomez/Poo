@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using Poo.Helpers;
 using Poo.Models;
-using static Poo.Record;
+using static Poo.Helpers.Record;
 
 SuperPower canFly = new SuperPower();
 canFly.Name = "Volar";
@@ -75,6 +76,11 @@ SuperHeroRecord superHeroRecordTwo = new(1, "Superman", "Clark Kent", "Ciudad Ca
 
 Console.WriteLine($"Implementacion de Record, result -> { superHeroRecordOne == superHeroRecordTwo}");
 
+
+//Implementando interfaces 
+var printInfoHeroe = new PrintInfo();
+printInfoHeroe.PrintSuperHeroe(superman); 
+printInfoHeroe.PrintSuperHeroe(wolverine);
 
 enum PowerLevel
 {

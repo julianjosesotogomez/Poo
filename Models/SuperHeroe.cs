@@ -1,12 +1,13 @@
-﻿using System.Text;
+﻿using Poo.Interfaces;
+using System.Text;
 
 namespace Poo.Models
 {
-    internal class SuperHeroe : Heroe
+    internal class SuperHeroe : Heroe, ISuperHeroe
     {
         private string _name;
 
-        public int Id;
+        public int Id { get; set; }
         //Encapsulamiento
         public override string Name 
         {   get 
@@ -26,7 +27,7 @@ namespace Poo.Models
                 return $"{Name} ({SecretIdentity})";
             }
         }
-        public string SecretIdentity;
+        public string SecretIdentity { get; set; }
         public override string City { get; set; }
         public List<SuperPower> SuperPowers;
         public bool CanFly;
