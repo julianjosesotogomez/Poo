@@ -2,13 +2,13 @@
 
 namespace Poo.Models
 {
-    internal class SuperHeroe
+    internal class SuperHeroe : Heroe
     {
         private string _name;
 
         public int Id;
         //Encapsulamiento
-        public string Name 
+        public override string Name 
         {   get 
             { 
                 return _name; 
@@ -27,7 +27,7 @@ namespace Poo.Models
             }
         }
         public string SecretIdentity;
-        public string City;
+        public override string City { get; set; }
         public List<SuperPower> SuperPowers;
         public bool CanFly;
 
@@ -55,6 +55,12 @@ namespace Poo.Models
                 sb.AppendLine($"{SecretIdentityName} esta usando el super poder {item.Name}");
             }
             return sb.ToString();
+        }
+
+        //Implementacion 
+        public override string SaveWorld()
+        {
+            return $"{SecretIdentityName} ha salvado el mundo";
         }
     }
 

@@ -19,7 +19,6 @@ regeneration.Level = PowerLevel.ThreeLevel;
 
 
 
-
 SuperHeroe superman = new SuperHeroe();
 superman.Id = 1;
 superman.Name = "      Superman    ";
@@ -31,6 +30,10 @@ supermanPowers.Add(canFly);
 supermanPowers.Add(superStrength);
 superman.SuperPowers = supermanPowers;
 superman.UseSuperpowers();
+string resultSaveWorld  =superman.SaveWorld();
+Console.WriteLine(resultSaveWorld);
+string resultSaveCity = superman.SaveCity();
+Console.WriteLine(resultSaveCity);
 
 
 SuperHeroe hulk = new SuperHeroe();
