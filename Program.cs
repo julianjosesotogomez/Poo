@@ -12,6 +12,12 @@ superStrength.Name = "Super Fuerza";
 superStrength.Description = "Capacidad de levantar lo que sea";
 superStrength.Level = PowerLevel.TwoLevel;
 
+SuperPower regeneration = new SuperPower();
+regeneration.Name = "Regeneracion";
+regeneration.Description = "Capacidad de regenerar heridas";
+regeneration.Level = PowerLevel.ThreeLevel;
+
+
 
 
 SuperHeroe superman = new SuperHeroe();
@@ -38,6 +44,23 @@ hulkPowers.Add(superStrength);
 hulk.SuperPowers = hulkPowers;
 string result =  hulk.UseSuperpowersString();
 Console.WriteLine(result);
+
+
+AntiHeroe wolverine = new AntiHeroe();
+wolverine.Id = 5;
+wolverine.Name = "Wolverine";
+wolverine.SecretIdentity = "Logan";
+wolverine.City = "Montañas";
+wolverine.CanFly = false;
+List<SuperPower> wolverinePowers = new List<SuperPower>();
+wolverinePowers.Add(regeneration);
+wolverinePowers.Add(superStrength);
+wolverine.SuperPowers = wolverinePowers;
+wolverine.UseSuperpowers();
+
+string antiHeroeAction = wolverine.AntiHeroeAction("Atacar la policia");//Implementación de herencia 
+Console.WriteLine(antiHeroeAction);
+
 
 
 //Implementacion del Record 

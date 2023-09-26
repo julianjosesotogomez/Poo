@@ -18,6 +18,7 @@ namespace Poo.Models
                 _name = value.Trim();//Limpiar espacios 
             }
         }
+        //Encapsulamiento
         public string SecretIdentityName
         {
             get
