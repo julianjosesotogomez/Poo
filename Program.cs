@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Poo.Models;
+using static Poo.Record;
 
 SuperPower canFly = new SuperPower();
 canFly.Name = "Volar";
@@ -38,6 +39,13 @@ hulk.SuperPowers = hulkPowers;
 string result =  hulk.UseSuperpowersString();
 Console.WriteLine(result);
 
+
+//Implementacion del Record 
+
+SuperHeroRecord superHeroRecordOne = new(1, "Superman", "Clark Kent", "Ciudad Capital");
+SuperHeroRecord superHeroRecordTwo = new(1, "Superman", "Clark Kent", "Ciudad Capital");
+
+Console.WriteLine($"Implementacion de Record, result -> { superHeroRecordOne == superHeroRecordTwo}");
 
 
 enum PowerLevel
