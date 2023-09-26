@@ -62,6 +62,12 @@ namespace Poo.Models
         {
             return $"{SecretIdentityName} ha salvado el mundo";
         }
+
+        public override string SaveCity()
+        {
+            //return base.SaveCity();
+            return $"{SecretIdentityName} ha salvado la {City}";
+        }
     }
 
 }

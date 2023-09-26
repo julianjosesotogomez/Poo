@@ -13,7 +13,7 @@ namespace Poo.Models
 
         public abstract string SaveWorld();
 
-        public string SaveCity()
+        public virtual string SaveCity()
         {
             return $"{Name} ha salvado la ciudad {City}";
         }

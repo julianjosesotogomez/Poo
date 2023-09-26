@@ -47,6 +47,8 @@ hulkPowers.Add(superStrength);
 hulk.SuperPowers = hulkPowers;
 string result =  hulk.UseSuperpowersString();
 Console.WriteLine(result);
+string resultSaveCity2 = hulk.SaveCity();
+Console.WriteLine(resultSaveCity2);
 
 
 AntiHeroe wolverine = new AntiHeroe();
